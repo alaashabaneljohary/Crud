@@ -1,0 +1,19 @@
+.text-center {
+  
+ background-color: #497174;
+}
+.text-center h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    letter-spacing: 28px;
+    margin: 0;
+}
+ span {
+    color: #497174;
+    background-color: #D6E4E5 ;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 4px;                    
+}

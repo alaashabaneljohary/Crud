@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CRUD refers to the four basic operations a software application should be able to perform – Create, Read, Update, and Delete.">
+    <meta name="keywords" content="CRUD Create, Read, Update, and Delete">
+    <title>CRUD Operations</title>
+    <!-- Create Css File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <div class="text-center">
+        <h1>CRUD </h1>
+    </div>
+    <SPan> <strong>Product Store </strong></SPan>
+  <div class="container crud shadow-lg p-4 mb-3">
+     <label for="productName">productName :</label>
+     <input type="text" class="form-control mb-3" id="productName">
+
+     <label for="productPrice">productPrice :</label>
+     <input type="number" class="form-control mb-3" id="productPrice">
+
+     <label for="productCategory">productCategory :</label>
+     <input type="text" class="form-control mb-3" id="productCategory">
+
+     <label for="productDesc">productDescription :</label>
+     <textarea name="productDesc" id="productDesc" class="form-control mb-3" cols="30" rows="10"></textarea>
+  
+        <button id="mainBtn" onclick="addProduct()" class="btn m-auto d-block bg-info  p-1 mt-3">Add Product </button>
+    </div>
+
+    <div class="container shadow-lg p-3">
+     <input type="search" onkeyup="searchProducts(this.value)" class="form-control  mb-3 w-50 m-auto" placeholder="Search " id="searchInput">
+     <table class="table">
+        <thead class="table-active">
+            <tr class="table-success">
+                <td>Index</td>
+                <td>productName</td>
+                <td>productPrice</td>
+                <td>productCategory</td>
+                <td>productDesc</td>
+                <td> <button class="btn bg-warning">Update</button></td>
+                <td><button class="btn bg-warning">Delete</button></td>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+           
+        </tbody>
+     </table>
+    </div>
+
+
+
+
+
+    <!-- Create Js Fille -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
